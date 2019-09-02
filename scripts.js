@@ -94,7 +94,9 @@ function gameSelect(e) {
 
 //Question and answer bank
 const questions = [
-    {question: 'Name this architectural landmark and where is it located?',
+    {
+        image: './images/bk.jpg',
+        question: 'Name this architectural landmark and where is it located?',
         answers: [
             { text: 'Burj Khalifa, Dubai UAE', correct: true },
             { text: 'Great Wall of China, China', correct: false },
@@ -102,7 +104,9 @@ const questions = [
             {text: 'Christ the Redeemer, Brazil', correct: false}
     ]
     },
-    {question: 'Name the furry rodent considered to be a Peruvian delicacy',
+    {
+        image: './images/gp.jpg',
+        question: 'Name the furry rodent considered to be a Peruvian delicacy',
         answers: [
             { text: 'Field mouse', correct: false },
             {text: 'Rabbit', correct: false},
@@ -111,6 +115,7 @@ const questions = [
         ]
     },
     {
+        image: './images/dali.jpg',
         question: 'What country did famous painter Salvador Dali grow up in?',
         answers: [
             { text: 'Spain', correct: true },
@@ -120,6 +125,7 @@ const questions = [
         ]
     },
     {
+        image: './images/gbr.jpg',
         question: 'Name this famous natural wonder down under',
         answers: [
             { text: 'Niagara Falls', correct: false },
