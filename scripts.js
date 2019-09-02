@@ -6,8 +6,6 @@ let currentQ
 const questionElement = document.getElementById('question')
 const answerElement = document.getElementById('answer-btns')
 const nextButton = document.getElementById('next-btn')
-// const answerChoice = document.getElementById('answer-btns')
-// var score
 
 
 // Start game
@@ -35,8 +33,7 @@ function gameStart() {
 
 function gameQuestion(question) {
     questionElement.innerText = question.question
-    // currentQ++
-    // continueQuestions()      
+   
 }
 
 // function Display questions
@@ -72,10 +69,7 @@ function gameSelect(e) {
         startButton.innerText="Reset"
         startButton.classList.remove('hide')
     }
-    // answerChoice.addEventListener('click', () => {
-    //     currentQ++
-    //     continueQuestions()
-//     })
+
  }
 
  //function to check answers
@@ -86,13 +80,9 @@ function gameSelect(e) {
      } else {
          element.classList.add('incorrect')
      }
-    //  showImage()
- }
- //function to show image
-//  function showImage() {
-//      const imageElement = document.getElementById('image').appendChild(image)
 
-//  }
+ }
+
 
  //function to continue to next question
  function continueQuestions() {
