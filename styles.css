@@ -1,0 +1,77 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+body.correct {
+    color: green;
+}
+
+body.incorrect {
+    color: red;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 0 0 5px 2px;
+    width: 800px;
+    max-width: 80%;
+
+}
+
+.options {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 7px;
+    margin: 10px 5px;
+}
+
+.btn {
+    background-color: #000000;
+    border: 1px solid purple;
+    border-radius: 4px;
+    color: #ffffff;
+    outline: none;
+    padding: 5px 10px;
+}
+
+.btn:hover {
+    border-color: #0000ff;
+}
+
+.btn-correct {
+    color: green;
+}
+
+.btn-incorrect {
+    color: red;
+}
+
+.start-btn, .next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.remote {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.hide {
+    display: none;
+}
