@@ -91,9 +91,9 @@ const questions = [
     },
     {question: 'Name the furry rodent considered to be a Peruvian delicacy',
         answers: [
-            { text: 'Guinea pig', correct: true },
             { text: 'Field mouse', correct: false },
             {text: 'Rabbit', correct: false},
+            { text: 'Guinea pig', correct: true },
             {text: 'Hamster', correct: false}
         ]
     },
@@ -107,12 +107,12 @@ const questions = [
         ]
     },
     {
-        question: 'Name this famous natural wonder located in Queensland, Australia',
+        question: 'Name this famous natural wonder down under',
         answers: [
-            { text: 'Great Barrier Reef', correct: true },
             { text: 'Niagara Falls', correct: false },
             { text: 'Northern Lights', correct: false },
-            { text: 'Grand Canyon', correct: false }
+            { text: 'Grand Canyon', correct: false },
+            { text: 'Great Barrier Reef', correct: true },
         ]
     },
     {
@@ -127,19 +127,19 @@ const questions = [
     {
         question: 'Name this famous dish and what country it hails from.',
         answers: [
-            { text: 'Kimbap, Korea', correct: true },
             { text: 'Sushi, Japan', correct: false },
             { text: 'Yakitori, Japan', correct: false },
-            { text: 'Pho, Vietnam', correct: false }
+            { text: 'Pho, Vietnam', correct: false },
+            { text: 'Kimbap, Korea', correct: true }
         ]
     },
     {
         question: 'Who wrote, "I love you as certain dark things are to be loved, in secret, between the shadow and the soul."',
         answers: [
-            { text: 'Pablo Neruda', correct: true },
             { text: 'Walt Whitman', correct: false },
             { text: 'Maya Angelou', correct: false },
-            { text: 'Langston Hughes', correct: false },
+            { text: 'Pablo Neruda', correct: true },
+            { text: 'Langston Hughes', correct: false }
         ]
     },
     {
@@ -152,28 +152,28 @@ const questions = [
         ]
     },
     {
-        question: 'Who is this famous artist that suffered severe injuries to her pelvic bone and spinal column at the age of 18. What type of accident?',
+        question: 'Who is this famous artist that suffered severe injuries to their pelvic bone and spinal column at the age of 18. What type of accident?',
         answers: [
-            { text: 'Frida Kahlo, bus accident', correct: true },
             { text: 'Diego Rivera, prison struggle', correct: false },
             { text: 'Salvador Dali, riot accident', correct: false },
+            { text: 'Frida Kahlo, bus accident', correct: true },
             { text: 'Pablo Picasso, childhood disease', correct: false }
         ]
     },
     {
         question: 'Name the tallest twin towers in the world and in what city?',
         answers: [
-            { text: 'Petronas Towers, Kuala Lumpur (Malaysia)', correct: true },
             { text: 'Twin Towers, Chicago (USA)', correct: false },
             { text: 'Emirates Towers, Dubai (UAE)', correct: false },
-            { text: 'Grand Gateway Shanghai, Shanghai (China)', correct: false }
+            { text: 'Grand Gateway Shanghai, Shanghai (China)', correct: false },
+            { text: 'Petronas Towers, Kuala Lumpur (Malaysia)', correct: true }
         ]
     },
     {
         question: 'What key ingredient differentiates this papaya salad dish as Lao-style vice Thai-style?',
         answers: [
-            { text: 'Crab', correct: true },
             { text: 'Shrimp', correct: false },
+            { text: 'Crab', correct: true },
             { text: 'Oranges', correct: false },
             { text: 'Peanuts', correct: false }
         ]
@@ -181,17 +181,17 @@ const questions = [
     {
         question: 'This prehistoric monument in England was popularized by musicians such as the Beatles and Black Sabbath. Name it.',
         answers: [
-            { text: 'Stonehenge', correct: true },
             { text: 'Great Wall of China', correct: false },
             { text: 'Mount Rushmore', correct: false },
-            { text: 'Colosseum', correct: false }
+            { text: 'Colosseum', correct: false },
+            { text: 'Stonehenge', correct: true }
         ]
     },
     {
         question: 'This monument stretches across mountains for 13,170 miles.',
         answers: [
-            { text: 'Great Wall of China', correct: true },
             { text: 'Long Walls of Athens', correct: false },
+            { text: 'Great Wall of China', correct: true },
             { text: 'Wall of Constantinople', correct: false },
             { text: 'The Berlin Wall', correct: false }
         ]
@@ -199,28 +199,28 @@ const questions = [
     {
         question: 'A recent top vacation destination due to having the best beaches in the world, what island is this located?',
         answers: [
-            { text: 'El Nido, Palawan (RP)', correct: true },
             { text: 'Jimbaran, Bali', correct: false },
             { text: 'Uppuveli, Sri Lanka', correct: false },
+            { text: 'El Nido, Palawan', correct: true },
             { text: 'Venice Beach, Los Angeles', correct: false }
         ]
     },
     {
         question: 'What animal has three eyelids?',
         answers: [
-            { text: 'Camel', correct: true },
             { text: 'Guinea Pig', correct: false },
             { text: 'Flamingo', correct: false },
-            { text: 'Kangaroo', correct: false }
+            { text: 'Kangaroo', correct: false },
+            { text: 'Camel', correct: true }
         ]
     },
     {
         question: 'What famous poet wrote the following: "Yesterday I was clever so I wanted to change the world. Today, I am wise so I am changing myself."?',
         answers: [
-            { text: 'Rumi', correct: true },
             { text: 'Langston Hughes', correct: false },
+            { text: 'Rumi', correct: true },
             { text: 'Nikki Giovanni', correct: false },
-            { text: 'Pablo Neruda', correct: false },
+            { text: 'Pablo Neruda', correct: false }
         ]
     },
     {
@@ -235,19 +235,19 @@ const questions = [
     {
         question: 'What year was the glass pyramid at the Louvre built?',
         answers: [
-            { text: '1989', correct: true },
             { text: '1977', correct: false },
             { text: '1856', correct: false },
-            { text: '2008', correct: false }
+            { text: '2008', correct: false },
+            { text: '1989', correct: true }
         ]
     },
     {
         question: 'The origins of this dish reign from countries of the Middle East, but where is chicken tikka masala considered a national dish?',
         answers: [
-            { text: 'Britain (UK)', correct: true },
             { text: 'Chennai (IN)', correct: false },
             { text: 'Bangkok (TH)', correct: false },
-            { text: 'Tuscany, (IT)', correct: false }
+            { text: 'Tuscany (IT)', correct: false },
+            { text: 'Britain (UK)', correct: true}            
         ]
     },
     {
@@ -262,8 +262,8 @@ const questions = [
     {
         question: 'Who said this: "If you dont like something, change it. If you cant change it, change your attitude."? ',
         answers: [
-            { text: 'Maya Angelous', correct: true },
             { text: 'Nikki Giovanni', correct: false },
+            { text: 'Maya Angelous', correct: true },
             { text: 'Jane Austen', correct: false },
             { text: 'Toni Morrison', correct: false }
         ]
@@ -271,10 +271,10 @@ const questions = [
     {
         question: 'Name this famous landmark located in Rio de Janeiro, Brazil.',
         answers: [
-            { text: 'Christ the Reedemer.', correct: true },
             { text: 'Shrine of the Bab', correct: false },
             { text: 'Basilicia of Our Lady Guadalupe', correct: false },
-            { text: 'Notre Dame Cathedral', correct: false }
+            { text: 'Notre Dame Cathedral', correct: false },
+            { text: 'Christ the Reedemer.', correct: true }
         ]
     },
     {
@@ -289,19 +289,19 @@ const questions = [
     {
         question: '3000 cherry blossom trees were gifted to the U.S. from the mayor of Tokyo in what year? Where can you find them?',
         answers: [
-            { text: '1912. National Mall, DC.', correct: true },
             { text: '1950, National Harbor, DC.', correct: false },
             { text: '1985, Inner Harbor, Baltimore', correct: false },
+            { text: '1912. National Mall, DC.', correct: true },
             { text: '2011, Rockefeller Plaza, New York', correct: false }
         ]
     },
     {
         question: 'This flower is native to what country?',
         answers: [
-            { text: 'South Africa', correct: true },
             { text: 'India', correct: false },
             { text: 'Guatemala', correct: false },
-            { text: 'Zimbabwe', correct: false }
+            { text: 'Zimbabwe', correct: false },
+            { text: 'South Africa', correct: true }
         ]
     },
     {
@@ -316,10 +316,10 @@ const questions = [
     {
         question: 'What college football team did this famous actor play for before reaching fame?',
         answers: [
-            { text: 'University of Miami', correct: true },
             { text: 'University of Southern California', correct: false },
             { text: 'Massachusetts Institute of Technology', correct: false },
-            { text: 'Ohio State University', correct: false }
+            { text: 'Ohio State University', correct: false },
+            { text: 'University of Miami', correct: true }
         ]
     },
     {
@@ -334,8 +334,8 @@ const questions = [
     {
         question: 'The Grand Canyon in Arizona is how deep?',
         answers: [
-            { text: '6,093 feet', correct: true },
             { text: '11,1111 feet', correct: false },
+            { text: '6,093 feet', correct: true },
             { text: '4,867 feet', correct: false },
             { text: '7,021 feet', correct: false }
         ]
@@ -343,10 +343,10 @@ const questions = [
     {
         question: 'Fermented shark, smoked puffin, and sheep head jelly are some of this country unusual dishes.',
         answers: [
-            { text: 'Iceland', correct: true },
             { text: 'New Zealand', correct: false },
             { text: 'Morocco', correct: false },
-            { text: 'Russia', correct: false }
+            { text: 'Russia', correct: false },
+            { text: 'Iceland', correct: true }
         ]
     }
 ]
