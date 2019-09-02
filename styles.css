@@ -1,47 +1,48 @@
 *, *::before, *::after {
     box-sizing: border-box;
-    font-family: Arial;
 }
 
 body {
-    background-color: #ffffff;
-    padding: 10px;
-    margin: 10px;
+    background-color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    padding: 40px;
+    margin: 40px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: right;
     width: 100vw;
     height: 100vh;
 }
 
 body.correct {
-    color: green;
+    background-image: url('./images/bk.jpg');
 }
 
 body.incorrect {
-    color: red;
+    background-color: red;
 }
 
-.container {
-    background-color: #ffffff;
+.content-container {
+    background-color: transparent;
     border-radius: 4px;
     padding: 10px;
-    box-shadow: 0 0 5px 2px;
-    width: 800px;
+    width: 500px;
     max-width: 80%;
+    height: 500px;
+    max-height: 80%;
 
 }
 
 .options {
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(1, auto);
     gap: 7px;
-    margin: 10px 5px;
+    margin: 10px 10px;
 }
 
 .btn {
     background-color: #000000;
-    border: 1px solid purple;
+    border: 1px solid #ffffff;
     border-radius: 4px;
     color: #ffffff;
     outline: none;
@@ -49,7 +50,7 @@ body.incorrect {
 }
 
 .btn:hover {
-    border-color: #0000ff;
+    color: greenyellow;
 }
 
 .btn-correct {
@@ -61,9 +62,9 @@ body.incorrect {
 }
 
 .start-btn, .next-btn {
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding: 10px 20px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 20px 20px;
 }
 
 .remote {
