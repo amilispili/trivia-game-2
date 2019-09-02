@@ -46,6 +46,9 @@ function displayQuestion(question) {
         button.classList.add('btn')
         if (answer.correct) {
             button.dataset.correct = answer.correct
+        } else {
+            button.dataset.incorrect = answer.incorrect
+            console.log('that was incorrect')
         }
         button.addEventListener('click', gameSelect)
         answerElement.appendChild(button)
@@ -59,7 +62,12 @@ function gameSelect(e) {
     Array.from(answerElement.children).forEach(button => {
         setStat(button, button.dataset.correct)
     })
-    nextButton.classList.remove('hide')
+    if (shuffleQ.length > currentQ + 1) {
+        nextButton.classList.remove('hide')
+    }   else {
+        startButton.innerText="Reset"
+        startButton.classList.remove('hide')
+    }
  }
 
  //function to check answers
@@ -85,6 +93,7 @@ function gameSelect(e) {
 
  //funtion to reset answer stat
  function resetStat() {
+     clearStat(document.body)
     nextButton.classList.add('hide')
     while (answerElement.firstChild) {
         answerElement.removeChild
@@ -248,7 +257,7 @@ const questions = [
             { text: 'The Louvre', correct: true },
             { text: 'Stonehenge', correct: false },
             { text: 'The Eiffel Tower', correct: false },
-            { text: 'St Basils Cathedral', correct: false }
+            { text: 'St Basil\'s Cathedral', correct: false }
         ]
     },
     {
@@ -279,7 +288,7 @@ const questions = [
         ]
     },
     {
-        question: 'Who said this: "If you dont like something, change it. If you cant change it, change your attitude."? ',
+        question: 'Who said this: "If you don\'t like something, change it. If you can\'t change it, change your attitude."? ',
         answers: [
             { text: 'Nikki Giovanni', correct: false },
             { text: 'Maya Angelous', correct: true },
@@ -299,7 +308,7 @@ const questions = [
     {
         question: 'Where can you find the best chicken sandwiches in the country?',
         answers: [
-            { text: 'Popeyes', correct: true },
+            { text: 'Popeye\'s', correct: true },
             { text: 'Chic-fil-A', correct: false },
             { text: 'McDonalds', correct: false },
             { text: 'Waffle House', correct: false }
