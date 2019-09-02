@@ -16,11 +16,20 @@ body {
 }
 
 body.correct {
-    background-image: url('./images/bk.jpg');
+    background-color: green;
 }
 
 body.incorrect {
     background-color: red;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 5px;
+    height: 150px;
+    width: 200px;
 }
 
 .content-container {

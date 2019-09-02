@@ -6,8 +6,9 @@ let currentQ
 const questionElement = document.getElementById('question')
 const answerElement = document.getElementById('answer-btns')
 const nextButton = document.getElementById('next-btn')
-var score
-// const imageElement = document.getElementById('image').appendChild(img)
+// const answerChoice = document.getElementById('answer-btns')
+// var score
+
 
 // Start game
 startButton.addEventListener('click', gameStart)
@@ -18,10 +19,10 @@ function gameNext() {
 }
 
 // Continue next question
-// nextButton.addEventListener('click', () => {
-//     currentQ++
-//     continueQuestions()
-// })
+nextButton.addEventListener('click', () => {
+    currentQ++
+    continueQuestions()
+})
 function gameStart() {
     startButton.classList.add('hide')
     shuffleQ = questions.sort(() => Math.random() - .5)
@@ -71,10 +72,10 @@ function gameSelect(e) {
         startButton.innerText="Reset"
         startButton.classList.remove('hide')
     }
-    answerElement.addEventListener('click', () => {
-        currentQ++
-        continueQuestions()
-    })
+    // answerChoice.addEventListener('click', () => {
+    //     currentQ++
+    //     continueQuestions()
+//     })
  }
 
  //function to check answers
@@ -85,11 +86,13 @@ function gameSelect(e) {
      } else {
          element.classList.add('incorrect')
      }
+    //  showImage()
  }
  //function to show image
- function showImage() {
+//  function showImage() {
+//      const imageElement = document.getElementById('image').appendChild(image)
 
- }
+//  }
 
  //function to continue to next question
  function continueQuestions() {
