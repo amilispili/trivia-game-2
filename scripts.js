@@ -6,11 +6,23 @@ let currentQ
 const questionElement = document.getElementById('question')
 const answerElement = document.getElementById('answer-btns')
 const nextButton = document.getElementById('next-btn')
+var imagesQBank = [
+    {name:''}
+]
 
 // Start game
 startButton.addEventListener('click', gameStart)
 
+// function to prompt next question
+function gameNext() {
+    displayQuestion(shuffleQ[currentQ])
+}
 
+// Continue next question
+nextButton.addEventListener('click', () => {
+    currentQ++
+    continueQuestions()
+})
 function gameStart() {
     startButton.classList.add('hide')
     shuffleQ = questions.sort(() => Math.random() - .5)
@@ -25,10 +37,6 @@ function gameQuestion(question) {
     questionElement.innerText = question.question      
 }
 
-// function to prompt next question
-function gameNext() {
-    displayQuestion(shuffleQ[currentQ])
-}
 // function Display questions
 function displayQuestion(question) {
     questionElement.innerText = question.question
@@ -64,6 +72,11 @@ function gameSelect(e) {
      }
  }
 
+ //function to continue to next question
+ function continueQuestions() {
+     resetStat()
+     displayQuestion(shuffleQ[currentQ])
+ }
  //function to clearstatus
  function clearStat(element) {
      element.classList.remove('correct')
@@ -274,7 +287,7 @@ const questions = [
             { text: 'Shrine of the Bab', correct: false },
             { text: 'Basilicia of Our Lady Guadalupe', correct: false },
             { text: 'Notre Dame Cathedral', correct: false },
-            { text: 'Christ the Reedemer.', correct: true }
+            { text: 'Christ the Reedemer', correct: true }
         ]
     },
     {
