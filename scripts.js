@@ -6,6 +6,7 @@ let currentQ
 const questionElement = document.getElementById('question')
 const answerElement = document.getElementById('answer-btns')
 const nextButton = document.getElementById('next-btn')
+const imageElement = document.getElementById('image')
 
 
 // Start game
@@ -52,7 +53,9 @@ function displayQuestion(question) {
         }
         button.addEventListener('click', gameSelect)
         answerElement.appendChild(button)
+        
     })
+    imageElement.innerHTML = '<img src="'+ question.image + '"  height="200px" width="170px"></img>'
 }
 // selecting your answer
 function gameSelect(e) {
@@ -158,7 +161,7 @@ const questions = [
         ]
     },
     {
-        image: './images/poutine.jpg',
+        image: './images/kb.jpg',
         question: 'Name this famous dish and what country it hails from.',
         answers: [
             { text: 'Sushi, Japan', incorrect: false },
@@ -312,13 +315,13 @@ const questions = [
         question: 'Who said this: "If you don\'t like something, change it. If you can\'t change it, change your attitude."? ',
         answers: [
             { text: 'Nikki Giovanni', incorrect: false },
-            { text: 'Maya Angelous', correct: true },
+            { text: 'Maya Angelou', correct: true },
             { text: 'Jane Austen', incorrect: false },
             { text: 'Toni Morrison', incorrect: false }
         ]
     },
     {
-        image: '/.images/ctr.jpg',
+        image: './images/ctr.jpg',
         question: 'Name this famous landmark located in Rio de Janeiro, Brazil.',
         answers: [
             { text: 'Shrine of the Bab', incorrect: false },
